@@ -1,0 +1,33 @@
+menu.cpu=Processor
+
+######################################
+## Optiboot ProMini Low Power
+
+ProMiniLP.name=ProMini LowPower (Internal Clock)
+
+ProMiniLP.upload.tool=arduino:avrdude
+ProMiniLP.upload.protocol=arduino
+ProMiniLP.upload.maximum_size=30720
+ProMiniLP.upload.maximum_data_size=2048
+ProMiniLP.upload.speed=9600
+
+ProMiniLP.bootloader.tool=arduino:avrdude
+ProMiniLP.bootloader.unlock_bits=0x3F
+ProMiniLP.bootloader.lock_bits=0x0F
+ProMiniLP.bootloader.low_fuses=0x62
+ProMiniLP.bootloader.high_fuses=0xD4
+#ProMiniLP.bootloader.extended_fuses=0x07
+ProMiniLP.bootloader.file=ProMiniLP/ATmegaBOOT_168_atmega328_pro_1MHz.hex
+
+ProMiniLP.build.board=AVR_UNO
+ProMiniLP.build.core=arduino:arduino
+ProMiniLP.build.variant=prominilp
+ProMiniLP.build.mcu=atmega328p
+
+ProMiniLP.menu.cpu.1Mhz_bodd=Atmega328 1Mhz (BOD disabled)
+ProMiniLP.menu.cpu.1Mhz_bodd.bootloader.extended_fuses=0x07
+ProMiniLP.menu.cpu.1Mhz_bodd.build.f_cpu=1000000L
+
+ProMiniLP.menu.cpu.1Mhz_18v=Atmega328 1Mhz (BOD 1.8V)
+ProMiniLP.menu.cpu.1Mhz_18v.bootloader.extended_fuses=0x06
+ProMiniLP.menu.cpu.1Mhz_18v.build.f_cpu=1000000L
