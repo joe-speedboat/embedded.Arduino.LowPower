@@ -19,7 +19,7 @@ ProMiniLP.bootloader.high_fuses=0xD4
 #ProMiniLP.bootloader.extended_fuses=0x07
 ProMiniLP.bootloader.file=ProMiniLP/ATmegaBOOT_168_atmega328_pro_1MHz.hex
 
-ProMiniLP.build.board=AVR_UNO
+ProMiniLP.build.board=AVR_PRO
 ProMiniLP.build.core=arduino:arduino
 ProMiniLP.build.variant=prominilp
 ProMiniLP.build.mcu=atmega328p
@@ -31,3 +31,26 @@ ProMiniLP.menu.cpu.1Mhz_bodd.build.f_cpu=1000000L
 ProMiniLP.menu.cpu.1Mhz_18v=Atmega328 1Mhz (BOD 1.8V)
 ProMiniLP.menu.cpu.1Mhz_18v.bootloader.extended_fuses=0x06
 ProMiniLP.menu.cpu.1Mhz_18v.build.f_cpu=1000000L
+
+ProMiniLP.menu.cpu.8MHzatmega328_18v=ATmega328 8MHz (BOD disabled)
+ProMiniLP.menu.cpu.8MHzatmega328_18v.upload.maximum_size=30720
+ProMiniLP.menu.cpu.8MHzatmega328_18v.upload.maximum_data_size=2048
+ProMiniLP.menu.cpu.8MHzatmega328_18v.upload.speed=57600
+ProMiniLP.menu.cpu.8MHzatmega328_18v.bootloader.low_fuses=0xFF
+ProMiniLP.menu.cpu.8MHzatmega328_18v.bootloader.high_fuses=0xDA
+ProMiniLP.menu.cpu.8MHzatmega328_18v.bootloader.extended_fuses=0x07
+ProMiniLP.menu.cpu.8MHzatmega328_18v.bootloader.file=ProMiniLP/ATmegaBOOT_168_atmega328_pro_8MHz.hex
+ProMiniLP.menu.cpu.8MHzatmega328_18v.build.mcu=atmega328p
+ProMiniLP.menu.cpu.8MHzatmega328_18v.build.f_cpu=8000000L
+
+ProMiniLP.menu.cpu.8MHzatmega328bodd=ATmega328 8MHz (BOD 1.8V)
+ProMiniLP.menu.cpu.8MHzatmega328bodd.upload.maximum_size=30720
+ProMiniLP.menu.cpu.8MHzatmega328bodd.upload.maximum_data_size=2048
+ProMiniLP.menu.cpu.8MHzatmega328bodd.upload.speed=57600
+ProMiniLP.menu.cpu.8MHzatmega328bodd.bootloader.low_fuses=0xFF
+ProMiniLP.menu.cpu.8MHzatmega328bodd.bootloader.high_fuses=0xDA
+ProMiniLP.menu.cpu.8MHzatmega328bodd.bootloader.extended_fuses=0x06
+ProMiniLP.menu.cpu.8MHzatmega328bodd.bootloader.file=ProMiniLP/ATmegaBOOT_168_atmega328_pro_8MHz.hex
+ProMiniLP.menu.cpu.8MHzatmega328bodd.build.mcu=atmega328p
+ProMiniLP.menu.cpu.8MHzatmega328bodd.build.f_cpu=8000000L
+
