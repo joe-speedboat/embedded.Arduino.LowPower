@@ -23,3 +23,15 @@ Do:
 
 Get:
 * Ultra low Power Arduino Pro Mini
+
+Use:
+* Start Arduino IDE (tested 1.6.7)
+* Tools > Board > ProMini LowPower 
+* Tools > Processor > Select your needs
+* Select Programmer you own, eg USBASP: Tools > Programmer > USBasp
+* Connect Programmer to ProMini 3.3v 8MHz: https://www.google.ch/search?q=usbasp+pro+mini
+* Tools > Burn Bootloader
+* Verify power consumption
+* Remove Power Regulator and Power LED
+* Verify power consumption: should be around 1-4 mA
+* Verify power consumption in deep sleep mode: should be around 1-4 uA !!!! (Tested with 8MHz ProMini)
