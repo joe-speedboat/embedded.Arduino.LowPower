@@ -70,3 +70,21 @@ Setting                   IDLE            POWER_DOWN      INPUT
 --------------            --------        ----------      --------
 noPower LED, no PWR Reg.  1.1mA           2uA             VCC 3.4V
 </pre>
+
+## Power Test Sketch:
+<pre>
+#include "LowPower.h"
+
+void setup()
+{
+    // No setup is required for this library
+}
+
+void loop() 
+{
+    // Enter power down state for 8 s with ADC and BOD module disabled
+    LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF);  
+    // Enter idle  state for 8 s
+    delay(8000);  
+}
+</pre>
