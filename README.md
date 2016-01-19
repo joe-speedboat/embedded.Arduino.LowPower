@@ -36,6 +36,16 @@ Use:
 * Verify power consumption: should be around 1-4 mA
 * Verify power consumption in deep sleep mode: should be around 1-4 uA !!!! (Tested with 8MHz ProMini)
 
+OVERVIEW OF AVAILABLE BOARDS:
+*Atmega328 1Mhz (BOD disabled, internal Clock)
+*Atmega328 1Mhz (BOD 1.8V, internal Clock)
+*Atmega328 1Mhz (BOD disabled, CKDIV8)
+*Atmega328 1Mhz (BOD 1.8V, CKDIV8)
+*ATmega328 8MHz (BOD disabled)
+*ATmega328 8MHz (BOD 1.8V)
+
+
+
 OVERVIEW OF POWER USAGE:
 <pre>
 ORIGINAL PRO MINI - 8MHz, 3.3V
