@@ -37,15 +37,26 @@ Use:
 * Verify power consumption in deep sleep mode: should be around 1-4 uA !!!! (Tested with 8MHz ProMini)
 
 OVERVIEW OF POWER USAGE:
-
-|Setting              | IDLE          | POWER_DOWN    | INPUT   
+<pre>
+ORIGINAL PRO MINI - 8MHz, 3.3V
 ----------------------------------------------------------------
-|ORIGINAL PRO MINI - 8MHz, 3.3V                                 
-Original              | 5.0mA         | 1.5mA         | VCC 3.4V
-noPower LED           | 3.6mA         | 100uA         | VCC 3.4V
-noPower LED, noReg.   | 3.6mA         | 20uA          | VCC 3.4V
-|ORIGINAL PRO MINI - 8MHz, 3.3V - BOD disabled                  
-noPower LED, noReg.   | 3.6mA         | 3uA           | VCC 3.4V
-ORIGINAL PRO MINI - 1MHz CKDIV8, 3.3V - BOD disabled            
-noPower LED, noReg.   | 1.1mA         | 2uA           | VCC 3.4V
+Setting                 IDLE            POWER_DOWN      INPUT
+--------------          --------        ----------      --------
+Original                5.0mA           1.5mA           VCC 3.4V
+noPower LED             3.6mA           100uA           VCC 3.4V
+noPower LED, noReg.     3.6mA           20uA            VCC 3.4V
 
+
+ORIGINAL PRO MINI - 8MHz, 3.3V - BOD disabled
+----------------------------------------------------------------
+Setting                 IDLE            POWER_DOWN      INPUT
+--------------          --------        ----------      --------
+noPower LED, noReg.     3.6mA           3uA             VCC 3.4V
+
+
+ORIGINAL PRO MINI - 1MHz CKDIV8, 3.3V - BOD disabled
+----------------------------------------------------------------
+Setting                 IDLE            POWER_DOWN      INPUT
+--------------          --------        ----------      --------
+noPower LED, noReg.     1.1mA           2uA             VCC 3.4V
+</pre>
