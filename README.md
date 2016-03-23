@@ -25,7 +25,7 @@
 * Ultra low Power Arduino Pro Mini
 
 ## HowTo Use:
-* Start Arduino IDE (tested 1.6.7)
+* Start Arduino IDE (tested with 1.6.8)
 * Tools > Board > ProMini LowPower 
 * Tools > Processor > Select your needs
 * Select Programmer you own, eg USBASP: Tools > Programmer > USBasp
